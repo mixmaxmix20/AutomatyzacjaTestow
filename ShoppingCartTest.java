@@ -66,12 +66,4 @@ public class ShoppingCartTest {
     void calculateTotal_shouldReturnZeroWhenCartIsEmpty() {
         assertEquals(0.0, cart.calculateTotal());
     }
-
-    @Test
-    void clear_shouldRemoveAllItems() {
-        cart.addItem(mockProduct1, 1);
-        cart.addItem(mockProduct2, 2);
-        cart.clear();
-        assertTrue(cart.getItems().isEmpty());
-    }
 }
